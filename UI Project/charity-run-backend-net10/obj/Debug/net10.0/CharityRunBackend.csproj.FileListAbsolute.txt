@@ -1,0 +1,54 @@
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\bin\Debug\net10.0\runners.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.staticwebassets.endpoints.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.exe
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.deps.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.runtimeconfig.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.dll
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.pdb
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.AssemblyInfoInputs.cache
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.AssemblyInfo.cs
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\scopedcss\bundle\CharityRunBackend.styles.css
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.dll
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\refint\CharityRunBackend.dll
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.pdb
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.genruntimeconfig.cache
+C:\Users\Daniel Howard\UI\SignUpPage\charity-run-backend-net10\obj\Debug\net10.0\ref\CharityRunBackend.dll
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.staticwebassets.endpoints.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\bin\Debug\net10.0\runners.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.exe
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.deps.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.runtimeconfig.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.dll
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\bin\Debug\net10.0\CharityRunBackend.pdb
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.AssemblyInfoInputs.cache
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.AssemblyInfo.cs
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\scopedcss\bundle\CharityRunBackend.styles.css
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.dll
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\refint\CharityRunBackend.dll
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.pdb
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\CharityRunBackend.genruntimeconfig.cache
+C:\Users\Daniel Howard\UI\UI Project\charity-run-backend-net10\obj\Debug\net10.0\ref\CharityRunBackend.dll

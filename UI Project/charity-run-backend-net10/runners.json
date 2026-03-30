@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "Name": "Admin Runner",
+    "Email": "admin@example.com",
+    "Age": 30,
+    "EmergencyPhone": "555-111-2222",
+    "PasswordHash": "BiuB6mYOf57kD/G/oWeICA==.RlNOgx1rkdjYemFrbys57a70Z1oJGeh2d0ZR\u002BGYXnGM=",
+    "TeamName": "FastFeet",
+    "IsAdmin": true,
+    "CreatedAt": "2026-03-14T23:51:22.2330777Z"
+  },
+  {
+    "Id": 2,
+    "Name": "Sample Runner",
+    "Email": "runner@example.com",
+    "Age": 22,
+    "EmergencyPhone": "555-333-4444",
+    "PasswordHash": "8Xv37QKuNkx/4eactLMP7w==.UdVx8m/kJR4dARY7OnSSfd7Kj1C1s\u002BUtnDKrl3L3qbo=",
+    "TeamName": "FastFeet",
+    "IsAdmin": false,
+    "CreatedAt": "2026-03-14T23:51:22.2519103Z"
+  },
+  {
+    "Id": 3,
+    "Name": "Jonathan Zheng Sun",
+    "Email": "jonathanzsun@gmail.com",
+    "Age": 4,
+    "EmergencyPhone": "8438988101",
+    "PasswordHash": "HYQspBdMOz4Qqb4yVwjuCA==.YXFGuKYnFnYSAGRKD0G3RuSOne4XHDKzy8Sl/2Uacm0=",
+    "TeamName": null,
+    "IsAdmin": false,
+    "CreatedAt": "2026-03-15T21:58:44.1150225Z"
+  },
+  {
+    "Id": 4,
+    "Name": "daniel howard",
+    "Email": "danielhoward42804@gmail.com",
+    "Age": 21,
+    "EmergencyPhone": "8431234567",
+    "PasswordHash": "nNfCrQesltD3A/1v8EGnEw==.TiWlMBnfOGzwF7/2hiWIbf\u002B0L7LbGJVr6gxmW\u002Bxc5lo=",
+    "TeamName": null,
+    "IsAdmin": false,
+    "CreatedAt": "2026-03-24T23:14:46.3763053Z"
+  },
+  {
+    "Id": 5,
+    "Name": "Daniel",
+    "Email": "daniel@gmail.com",
+    "Age": 21,
+    "EmergencyPhone": "8431234567",
+    "PasswordHash": "1VvcN4YAErmSdoOfthoPmA==.CAj95sjKSB5uuEAg\u002B3Bx4kp1pflYNfSvvSWgWC1bqWw=",
+    "TeamName": "Fastfeet",
+    "IsAdmin": false,
+    "CreatedAt": "2026-03-30T14:16:27.7845212Z"
+  }
+]
