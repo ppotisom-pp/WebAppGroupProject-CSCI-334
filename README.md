@@ -1,6 +1,6 @@
 # Run for Bright Futures – Charity 5K Website
 
-Run for Bright Futures is a full-stack web application created for a CSCI-334 group project. The site was designed for a fictional nonprofit organization hosting a charity 5K on June 19 to raise money for children's education and after-school programs.
+Run for Bright Futures is a full-stack web application created for a CSCI-334 User Interface Programming group project. The site was designed for a fictional nonprofit organization hosting a charity 5K on June 19 to raise money for children's education and after-school programs.
 
 The application allows users to learn about the charity, register for the race, log in, view race details, and access a personal dashboard. It also includes admin features for managing registered runners.
 
