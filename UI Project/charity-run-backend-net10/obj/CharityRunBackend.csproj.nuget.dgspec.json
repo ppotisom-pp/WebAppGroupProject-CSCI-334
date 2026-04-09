@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj": {}
+    "C:\\Users\\Daniel Howard\\documents\\github\\WebAppGroupProject-CSCI-334\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj": {
+    "C:\\Users\\Daniel Howard\\documents\\github\\WebAppGroupProject-CSCI-334\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel Howard\\documents\\github\\WebAppGroupProject-CSCI-334\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj",
         "projectName": "CharityRunBackend",
-        "projectPath": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj",
+        "projectPath": "C:\\Users\\Daniel Howard\\documents\\github\\WebAppGroupProject-CSCI-334\\UI Project\\charity-run-backend-net10\\CharityRunBackend.csproj",
         "packagesPath": "C:\\Users\\Daniel Howard\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\obj\\",
+        "outputPath": "C:\\Users\\Daniel Howard\\documents\\github\\WebAppGroupProject-CSCI-334\\UI Project\\charity-run-backend-net10\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

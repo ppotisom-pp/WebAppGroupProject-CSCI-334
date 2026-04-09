@@ -40,7 +40,7 @@
     "EmergencyPhone": "8431234567",
     "PasswordHash": "1VvcN4YAErmSdoOfthoPmA==.CAj95sjKSB5uuEAg\u002B3Bx4kp1pflYNfSvvSWgWC1bqWw=",
     "TeamName": "Fastfeet",
-    "IsAdmin": true,
+    "IsAdmin": false,
     "CreatedAt": "2026-03-30T14:16:27.7845212Z"
   }
 ]
