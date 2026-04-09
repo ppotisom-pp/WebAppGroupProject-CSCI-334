@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-react\\charity-run-react\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:charity-run-react\\charity-run-react\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:charity-run-backend-net10\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\runners.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:charity-run-backend-net10\\runners.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-react\\charity-run-react\\src\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:charity-run-react\\charity-run-react\\src\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +36,49 @@
               "RelativeDocumentMoniker": "charity-run-react\\charity-run-react\\src\\App.jsx",
               "ToolTip": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-react\\charity-run-react\\src\\App.jsx",
               "RelativeToolTip": "charity-run-react\\charity-run-react\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAqwJ0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-03-30T13:43:18.028Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\Program.cs",
+              "RelativeDocumentMoniker": "charity-run-backend-net10\\Program.cs",
+              "ToolTip": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\Program.cs",
+              "RelativeToolTip": "charity-run-backend-net10\\Program.cs",
+              "ViewState": "AgIAADgBAAAAAAAAAAAAAFIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T22:35:21.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "runners.json",
+              "DocumentMoniker": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\runners.json",
+              "RelativeDocumentMoniker": "charity-run-backend-net10\\runners.json",
+              "ToolTip": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-backend-net10\\runners.json",
+              "RelativeToolTip": "charity-run-backend-net10\\runners.json",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-31T21:45:44.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-react\\charity-run-react\\src\\styles.css",
+              "RelativeDocumentMoniker": "charity-run-react\\charity-run-react\\src\\styles.css",
+              "ToolTip": "C:\\Users\\Daniel Howard\\UI\\UI Project\\charity-run-react\\charity-run-react\\src\\styles.css",
+              "RelativeToolTip": "charity-run-react\\charity-run-react\\src\\styles.css",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAKEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-31T20:43:59.747Z",
               "EditorCaption": ""
             }
           ]

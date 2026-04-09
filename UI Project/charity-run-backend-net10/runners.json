@@ -34,17 +34,6 @@
   },
   {
     "Id": 4,
-    "Name": "daniel howard",
-    "Email": "danielhoward42804@gmail.com",
-    "Age": 21,
-    "EmergencyPhone": "8431234567",
-    "PasswordHash": "nNfCrQesltD3A/1v8EGnEw==.TiWlMBnfOGzwF7/2hiWIbf\u002B0L7LbGJVr6gxmW\u002Bxc5lo=",
-    "TeamName": null,
-    "IsAdmin": false,
-    "CreatedAt": "2026-03-24T23:14:46.3763053Z"
-  },
-  {
-    "Id": 5,
     "Name": "Daniel",
     "Email": "daniel@gmail.com",
     "Age": 21,

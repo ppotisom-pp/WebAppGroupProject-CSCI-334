@@ -9,6 +9,8 @@ import {
     login,
     registerRunner,
 } from './api'
+import runImage from './assets/run.jpg'
+import mapImage from './assets/map.jpg'
 
 const pages = ['home', 'login', 'register', 'dashboard', 'admin']
 
@@ -17,6 +19,7 @@ export default function App() {
     const [token, setToken] = useState(localStorage.getItem('token') || '')
     const [message, setMessage] = useState('')
     const [messageType, setMessageType] = useState('info')
+    const [zoomedImage, setZoomedImage] = useState(false)
 
     const [charity, setCharity] = useState(null)
     const [race, setRace] = useState(null)
@@ -129,6 +132,41 @@ export default function App() {
         }
     }
 
+    async function makeAdmin(id) {
+        try {
+            const res = await fetch(`http://localhost:5000/api/admin/runners/${id}/make-admin`, {
+                method: 'POST',
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+
+            const data = await res.json()
+            console.log(data)
+
+            loadPrivateData() // refresh list
+        } catch (err) {
+            console.error(err)
+        }
+    }
+
+    async function removeAdmin(id) {
+        try {
+            await fetch(`http://localhost:5000/api/admin/runners/${id}/remove-admin`, {
+                method: 'POST',
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+
+            const data = await res.json()
+            console.log("demote result:", data)
+
+            loadPrivateData(token)
+        } catch (err) {
+            console.error(err)
+        }
+    }
     function validateLogin() {
         const errors = {}
 
@@ -356,107 +394,137 @@ export default function App() {
 
             <main className="main-grid">
                 {page === 'home' && (
-                    <section className="panel">
-                        <div
-                            style={{
-                                display: 'grid',
-                                gap: '1rem',
-                            }}
-                        >
+                    <div className="home-layout">
+
+                        {/* LEFT SIDE */}
+                        <section className="panel">
                             <div
                                 style={{
-                                    background: '#f8fafc',
-                                    border: '1px solid #e5e7eb',
-                                    borderRadius: '14px',
-                                    padding: '1rem',
+                                    display: 'grid',
+                                    gap: '1rem',
                                 }}
                             >
-                                <h2 style={{ marginTop: 0 }}>Welcome to the race</h2>
-                                <p style={{ marginTop: 0 }}>
-                                    Register online, check race details, log in to view your runner dashboard, and
-                                    organize with teammates before race day.
-                                </p>
+                                <div
+                                    style={{
+                                        background: '#f8fafc',
+                                        border: '1px solid #e5e7eb',
+                                        borderRadius: '14px',
+                                        padding: '1rem',
+                                    }}
+                                >
+                                    <h2 style={{ marginTop: 0 }}>Welcome to the race</h2>
+                                    <p style={{ marginTop: 0 }}>
+                                        Register online, check race details, log in to view your runner dashboard, and
+                                        organize with teammates before race day.
+                                    </p>
 
-                                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                                    <button type="button" onClick={() => setPage('register')}>
-                                        Register Now
-                                    </button>
-                                    <button type="button" onClick={() => setPage('login')}>
-                                        Runner Login
-                                    </button>
+                                    <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                                        <button type="button" onClick={() => setPage('register')}>
+                                            Register Now
+                                        </button>
+                                        <button type="button" onClick={() => setPage('login')}>
+                                            Runner Login
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
 
-                            {publicLoading ? (
-                                <div className="panel" style={{ padding: '1rem' }}>
-                                    Loading race information...
-                                </div>
-                            ) : (
-                                <div className="card-grid">
-                                    <article className="card">
-                                        <h3 style={{ marginTop: 0 }}>Charity</h3>
-                                        <p>
-                                            <strong>Name:</strong>{' '}
-                                            {charity?.charityName || charity?.CharityName || 'Not available'}
-                                        </p>
-                                        <p>
-                                            <strong>Announcement:</strong>{' '}
-                                            {charity?.publicAnnouncement || charity?.PublicAnnouncement || 'Not available'}
-                                        </p>
-                                        <p style={{ marginBottom: 0 }}>
-                                            {charity?.description || charity?.Description || 'No description available.'}
-                                        </p>
-                                    </article>
+                                {publicLoading ? (
+                                    <div className="panel" style={{ padding: '1rem' }}>
+                                        Loading race information...
+                                    </div>
+                                ) : (
+                                    <div className="card-grid">
+                                        <article className="card">
+                                            <h3 style={{ marginTop: 0 }}>Charity</h3>
+                                            <p>
+                                                <strong>Name:</strong>{' '}
+                                                {charity?.charityName || charity?.CharityName || 'Not available'}
+                                            </p>
+                                            <p>
+                                                <strong>Announcement:</strong>{' '}
+                                                {charity?.publicAnnouncement || charity?.PublicAnnouncement || 'Not available'}
+                                            </p>
+                                            <p style={{ marginBottom: 0 }}>
+                                                {charity?.description || charity?.Description || 'No description available.'}
+                                            </p>
+                                        </article>
 
-                                    <article className="card">
-                                        <h3 style={{ marginTop: 0 }}>Race Details</h3>
-                                        <p>
-                                            <strong>Date:</strong> {race?.raceDate || race?.RaceDate || 'Not available'}
-                                        </p>
-                                        <p>
-                                            <strong>Location:</strong>{' '}
-                                            {race?.location || race?.Location || 'Not available'}
-                                        </p>
-                                        <p>
-                                            <strong>Distance:</strong>{' '}
-                                            {race?.distance || race?.Distance || 'Not available'}
-                                        </p>
-                                        <p style={{ marginBottom: 0 }}>
-                                            <strong>Start Time:</strong>{' '}
-                                            {race?.startTime || race?.StartTime || 'Not available'}
-                                        </p>
-                                    </article>
+                                        <article className="card">
+                                            <h3 style={{ marginTop: 0 }}>Race Details</h3>
+                                            <p>
+                                                <strong>Date:</strong> {race?.raceDate || race?.RaceDate || 'Not available'}
+                                            </p>
+                                            <p>
+                                                <strong>Location:</strong>{' '}
+                                                {race?.location || race?.Location || 'Not available'}
+                                            </p>
+                                            <p>
+                                                <strong>Distance:</strong>{' '}
+                                                {race?.distance || race?.Distance || 'Not available'}
+                                            </p>
+                                            <p style={{ marginBottom: 0 }}>
+                                                <strong>Start Time:</strong>{' '}
+                                                {race?.startTime || race?.StartTime || 'Not available'}
+                                                </p>
 
-                                    <article className="card wide-card">
-                                        <h3 style={{ marginTop: 0 }}>Race Day Schedule</h3>
-                                        {scheduleItems.length === 0 ? (
-                                            <p style={{ marginBottom: 0 }}>No schedule is available yet.</p>
-                                        ) : (
-                                            <div style={{ display: 'grid', gap: '0.75rem' }}>
-                                                {scheduleItems.map((item, index) => (
-                                                    <div
-                                                        key={`${item.time || item.Time || 'time'}-${index}`}
-                                                        style={{
-                                                            border: '1px solid #e5e7eb',
-                                                            borderRadius: '10px',
-                                                            padding: '0.75rem',
-                                                            background: 'white',
+                                                <div style={{ marginTop: '1rem' }}>
+                                                    <img
+                                                        src={mapImage}
+                                                        alt="Race Route Map"
+                                                        onClick={() => {
+                                                            console.log("clicked")
+                                                            setZoomedImage(true)
                                                         }}
-                                                    >
-                                                        <strong>{item.time || item.Time || 'Time TBD'}</strong>
-                                                        <div>{item.title || item.Title || 'Activity'}</div>
-                                                        <div style={{ color: '#4b5563' }}>
-                                                            {item.description || item.Description || ''}
+                                                        style={{
+                                                            width: '100%',
+                                                            borderRadius: '12px',
+                                                            border: '1px solid #e5e7eb',
+                                                            cursor: 'pointer'
+                                                        }}
+                                                    /> 
+                                                    <p style={{ fontSize: '1rem', color: '#6b7280', marginTop: '0.5rem' }}>
+                                                        Race route through Charleston Waterfront Park
+                                                    </p>
+                                                </div>
+                                        </article>
+
+                                        <article className="card wide-card">
+                                            <h3 style={{ marginTop: 0 }}>Race Day Schedule</h3>
+                                            {scheduleItems.length === 0 ? (
+                                                <p style={{ marginBottom: 0 }}>No schedule is available yet.</p>
+                                            ) : (
+                                                <div style={{ display: 'grid', gap: '0.75rem' }}>
+                                                    {scheduleItems.map((item, index) => (
+                                                        <div
+                                                            key={`${item.time || item.Time || 'time'}-${index}`}
+                                                            style={{
+                                                                border: '1px solid #e5e7eb',
+                                                                borderRadius: '10px',
+                                                                padding: '0.75rem',
+                                                                background: 'white',
+                                                            }}
+                                                        >
+                                                            <strong>{item.time || item.Time || 'Time TBD'}</strong>
+                                                            <div>{item.title || item.Title || 'Activity'}</div>
+                                                            <div style={{ color: '#4b5563' }}>
+                                                                {item.description || item.Description || ''}
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        )}
-                                    </article>
-                                </div>
-                            )}
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </article>
+                                    </div>
+                                )}
+                            </div>
+                        </section>
+
+                        {/* RIGHT SIDE IMAGE */}
+                        <div className="side-image">
+                            <img src={runImage} alt="Race" />
                         </div>
-                    </section>
+
+                    </div>
                 )}
 
                 {page === 'login' && (
@@ -813,9 +881,52 @@ export default function App() {
                                                         <td style={tableCellStyle}>{runner.age || runner.Age}</td>
                                                         <td style={tableCellStyle}>
                                                             {runner.teamName || runner.TeamName || '—'}
+                                                        
                                                         </td>
                                                         <td style={tableCellStyle}>
-                                                            {runner.isAdmin || runner.IsAdmin ? 'Yes' : 'No'}
+                                                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+
+                                                                {/* LEFT: Yes / No */}
+                                                                <span>
+                                                                    {runner.isAdmin || runner.IsAdmin ? 'Yes' : 'No'}
+                                                                </span>
+
+                                                                {/* RIGHT: BUTTON */}
+                                                                <div>
+                                                                    {runner.isAdmin || runner.IsAdmin ? (
+                                                                        <button
+                                                                            onClick={() => removeAdmin(runner.id || runner.Id)}
+                                                                            style={{
+                                                                                marginLeft: '10px',
+                                                                                background: '#7f1d1d',
+                                                                                color: 'white',
+                                                                                border: 'none',
+                                                                                padding: '6px 10px',
+                                                                                borderRadius: '6px',
+                                                                                cursor: 'pointer'
+                                                                            }}
+                                                                        >
+                                                                            Demote
+                                                                        </button>
+                                                                    ) : (
+                                                                        <button
+                                                                            onClick={() => makeAdmin(runner.id || runner.Id)}
+                                                                            style={{
+                                                                                marginLeft: '10px',
+                                                                                background: '#065f46',
+                                                                                color: 'white',
+                                                                                border: 'none',
+                                                                                padding: '6px 10px',
+                                                                                borderRadius: '6px',
+                                                                                cursor: 'pointer'
+                                                                            }}
+                                                                        >
+                                                                            Make Admin
+                                                                        </button>
+                                                                    )}
+                                                                </div>
+
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                 ))}
@@ -828,6 +939,33 @@ export default function App() {
                     </section>
                 )}
             </main>
+            {zoomedImage && (
+                <div
+                    onClick={() => setZoomedImage(false)}
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100vw',
+                        height: '100vh',
+                        background: 'rgba(0,0,0,0.9)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        zIndex: 999
+                    }}
+                >
+                    <img
+                        src={mapImage}
+                        alt="Zoomed Map"
+                        style={{
+                            maxWidth: '90%',
+                            maxHeight: '90%',
+                            borderRadius: '12px'
+                        }}
+                    />
+                </div>
+            )}
         </div>
     )
 }

@@ -317,6 +317,26 @@ app.MapPost("/api/admin/runners/{id:int}/make-admin", async (int id, HttpContext
     });
 });
 
+app.MapPost("/api/admin/runners/{id:int}/remove-admin", async (int id, HttpContext http) =>
+{
+    var auth = GetAuthenticatedRunner(http, sessions, store.Runners);
+    if (auth is null) return Results.Unauthorized();
+    if (!auth.IsAdmin) return Results.StatusCode(403);
+
+    if (auth.Id == id)
+    {
+        return Results.BadRequest(new { message = "You cannot demote yourself." });
+    }
+
+    var runner = store.Runners.FirstOrDefault(r => r.Id == id);
+    if (runner is null) return Results.NotFound();
+
+    runner.IsAdmin = false;
+
+    await store.SaveAsync();
+    return Results.Ok(new { message = "Runner demoted from admin." });
+});
+
 app.MapGet("/api/admin/email-preview/{id:int}", (int id, HttpContext http) =>
 {
     var auth = GetAuthenticatedRunner(http, sessions, store.Runners);

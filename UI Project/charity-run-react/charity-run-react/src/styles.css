@@ -1,136 +1,262 @@
 :root {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1f2937;
-  background: #f3f4f6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ========================= */
+/* GLOBAL                    */
+/* ========================= */
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+    margin: 0;
+    background: #0b0b0b;
+    color: #111827;
 }
 
-button,
-input {
-  font: inherit;
-}
-
-button {
-  cursor: pointer;
-}
+/* ========================= */
+/* LAYOUT                    */
+/* ========================= */
 
 .app-shell {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-}
-
-.subtitle {
-  margin: 0.25rem 0 0;
-  color: #4b5563;
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.nav button,
-.form-stack button {
-  border: 1px solid #cbd5e1;
-  background: white;
-  padding: 0.6rem 0.9rem;
-  border-radius: 8px;
-}
-
-.nav .active {
-  background: #dbeafe;
-}
-
-.message-box {
-  background: #fff7ed;
-  border: 1px solid #fed7aa;
-  padding: 0.75rem 1rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+    max-width: 2000px;
+    margin: 0;
+    padding: 1rem 3rem;
 }
 
 .main-grid {
-  display: grid;
-  gap: 1rem;
+    display: grid;
+    gap: 1rem;
 }
+
+/* ========================= */
+/* HEADER                    */
+/* ========================= */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+}
+
+    .topbar h1 {
+        color: #111827;
+    }
+
+.subtitle {
+    margin: 0.25rem 0 0;
+    color: #4b5563;
+}
+
+/* ========================= */
+/* NAVIGATION                */
+/* ========================= */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+    .nav button {
+        background: #111827;
+        color: white;
+        border: none;
+        padding: 0.6rem 0.9rem;
+        border-radius: 8px;
+    }
+
+    .nav .active {
+        background: #7f1d1d;
+    }
+
+/* ========================= */
+/* BUTTONS                   */
+/* ========================= */
+
+button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    background: #7f1d1d;
+    color: white;
+    transition: 0.2s;
+}
+
+    button:hover {
+        background: #b91c1c;
+    }
+
+/* ========================= */
+/* MESSAGE BOX               */
+/* ========================= */
+
+.message-box {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #7f1d1d;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* PANELS (WHITE AREAS)      */
+/* ========================= */
 
 .panel {
-  background: white;
-  padding: 1rem;
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
 }
+
+    .panel h1,
+    .panel h2,
+    .panel h3,
+    .panel p,
+    .panel span,
+    .panel div {
+        color: #111827;
+    }
 
 .narrow-panel {
-  max-width: 560px;
+    max-width: 560px;
 }
 
+/* ========================= */
+/* CARDS (CHARITY / RACE)    */
+/* ========================= */
+
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
 }
 
 .card {
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1rem;
-  background: #fafafa;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem;
 }
 
-.wide-card {
-  grid-column: 1 / -1;
+    .card strong {
+        color: #7f1d1d;
+    }
+
+/* ========================= */
+/* SCHEDULE ITEMS            */
+/* ========================= */
+
+.panel .card {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #7f1d1d;
 }
+
+    .panel .card strong {
+        color: #7f1d1d;
+    }
+
+/* ========================= */
+/* FORMS                     */
+/* ========================= */
 
 .form-stack {
-  display: grid;
-  gap: 0.9rem;
+    display: grid;
+    gap: 0.9rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
 }
 
-.form-stack label {
-  display: grid;
-  gap: 0.35rem;
-}
+    .form-stack label {
+        display: grid;
+        gap: 0.35rem;
+        color: #111827;
+    }
 
-.form-stack input {
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
-  padding: 0.6rem;
-}
+    .form-stack input {
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        padding: 0.6rem;
+        background: #f9fafb;
+        color: #111827;
+    }
+
+        .form-stack input:focus {
+            border-color: #7f1d1d;
+            outline: none;
+        }
+
+/* ========================= */
+/* CODE BLOCK                */
+/* ========================= */
 
 pre {
-  white-space: pre-wrap;
-  word-break: break-word;
-  background: #f8fafc;
-  padding: 0.75rem;
-  border-radius: 10px;
-  overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: #111827;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 10px;
+    overflow-x: auto;
 }
 
-/* STUDENT TASK:
-   Improve responsive behavior, spacing, contrast, and typography.
-   This CSS is intentionally basic.
-*/
+/* ========================= */
+/* MOBILE                    */
+/* ========================= */
 
 @media (max-width: 700px) {
-  .topbar {
-    flex-direction: column;
-  }
+    .topbar {
+        flex-direction: column;
+    }
+}
+
+/* ========================= */
+/* SIDE IMAGE FIX ONLY       */
+/* ========================= */
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+    position: relative;
+}
+
+/* push image outside container */
+.side-image {
+    position: relative;
+}
+
+    .side-image img {
+        width: 400px;
+        border-radius: 14px;
+    }
+
+/* mobile */
+@media (max-width: 900px) {
+    .home-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .side-image {
+        display: none;
+    }
+}
+
+.card img:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
 }

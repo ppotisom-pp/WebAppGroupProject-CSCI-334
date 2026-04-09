@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\charity-run-backend-net10",
-    "\\charity-run-react"
+    "\\charity-run-backend-net10\\bin",
+    "\\charity-run-backend-net10\\bin\\Debug",
+    "\\charity-run-react",
+    "\\charity-run-react\\charity-run-react",
+    "\\charity-run-react\\charity-run-react\\src"
   ],
-  "SelectedNode": "\\charity-run-backend-net10\\Program.cs",
+  "SelectedNode": "\\charity-run-react\\charity-run-react\\src\\App.jsx",
   "PreviewInSolutionExplorer": false
 }
