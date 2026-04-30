@@ -64,5 +64,38 @@
     "TeamName": null,
     "IsAdmin": false,
     "CreatedAt": "2026-04-30T03:34:59.5732486Z"
+  },
+  {
+    "Id": 7,
+    "Name": "Bryce",
+    "Email": "byce@gmail.com",
+    "Age": 24,
+    "EmergencyPhone": "8435555555",
+    "PasswordHash": "g6rsULDKYkk7YfSKMcNoJw==./XKarBW8As989USjpSAowYZWQvrGYIdrKYXqL06cwV8=",
+    "TeamName": "BrycesBunch",
+    "IsAdmin": false,
+    "CreatedAt": "2026-04-30T03:44:00.2427579Z"
+  },
+  {
+    "Id": 8,
+    "Name": "daniel",
+    "Email": "daniel2@gmail.com",
+    "Age": 19,
+    "EmergencyPhone": "8435555522",
+    "PasswordHash": "Yrm4FZl5TMyATEtznlaDyg==.g5TCENORxtawPz56Pxf\u002BnlgbmtY6Zf/JDl/ylMaomkE=",
+    "TeamName": "DanielsRaceWinners",
+    "IsAdmin": false,
+    "CreatedAt": "2026-04-30T03:50:44.1723605Z"
+  },
+  {
+    "Id": 9,
+    "Name": "Mark",
+    "Email": "Mark3@gmail.com",
+    "Age": 20,
+    "EmergencyPhone": "8434444444",
+    "PasswordHash": "WFGuuRJUORn7B8\u002BB/Hgj8g==.OhA1bVQRy/Pxdsx8gMUzMuReKQdl9PaQnHMze24iYdo=",
+    "TeamName": "MarksRunners",
+    "IsAdmin": false,
+    "CreatedAt": "2026-04-30T04:01:27.5178794Z"
   }
 ]
