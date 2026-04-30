@@ -200,11 +200,15 @@ export default function App() {
             errors.age = 'Age must be a positive number.'
         }
 
-        if (!registerForm.emergencyPhone.trim()) {
-            errors.emergencyPhone = 'Please enter an emergency phone number.'
-        } else if (registerForm.emergencyPhone.trim().length < 7) {
-            errors.emergencyPhone = 'Please enter a valid emergency phone number.'
-        }
+        const phone = registerForm.emergencyPhone.trim()
+
+		const phoneRegex = /^(\(\d{3}\)\s?|\d{3}[-\s]?)?\d{3}[-\s]?\d{4}$/
+
+		if (!phone) {
+    		errors.emergencyPhone = 'Please enter an emergency phone number.'
+		} else if (!phoneRegex.test(phone)) {
+    		errors.emergencyPhone = 'Enter a valid phone number (e.g., 843-555-1234)'
+		}
 
         if (!registerForm.password.trim()) {
             errors.password = 'Please create a password.'

@@ -42,5 +42,16 @@
     "TeamName": "Fastfeet",
     "IsAdmin": false,
     "CreatedAt": "2026-03-30T14:16:27.7845212Z"
+  },
+  {
+    "Id": 5,
+    "Name": "Mark",
+    "Email": "Mark@gmail.com",
+    "Age": 19,
+    "EmergencyPhone": "4555161616",
+    "PasswordHash": "RNQV1qc\u002BurA2sJmz4TrGpw==.gfrovkdMwJC7LJzgE9/pdZzgucg2pEvTDb4fh3yCoZY=",
+    "TeamName": "RaceWinner",
+    "IsAdmin": false,
+    "CreatedAt": "2026-04-30T03:28:45.5324786Z"
   }
 ]

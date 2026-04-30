@@ -53,5 +53,16 @@
     "TeamName": "RaceWinner",
     "IsAdmin": false,
     "CreatedAt": "2026-04-30T03:28:45.5324786Z"
+  },
+  {
+    "Id": 6,
+    "Name": "Mark",
+    "Email": "Mark2@gmail.com",
+    "Age": 19,
+    "EmergencyPhone": "8888888888",
+    "PasswordHash": "6FHXYswqVfnXHWilBUEQLA==.aKVyL8n0VzZTzXPNGvzBKZcJLghHa61MsdJ3DGYULBc=",
+    "TeamName": null,
+    "IsAdmin": false,
+    "CreatedAt": "2026-04-30T03:34:59.5732486Z"
   }
 ]
